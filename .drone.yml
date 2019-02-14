@@ -1,0 +1,15 @@
+---
+
+kind: pipeline
+name: default
+
+steps:
+  - name: test
+    image: busybox
+    commands:
+      - 'true'
+
+  - name: test2
+    image: busybox
+    commands:
+      - 'fail'
